@@ -1,0 +1,27 @@
+#root {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(38rem, 50%));
+  grid-template-rows: repeat(2, minmax(27rem, 50%));
+  grid-gap: 5px;
+  background: #333; }
+
+.retro__box {
+  display: grid;
+  grid-template-columns: 31rem;
+  grid-template-rows: 4rem 21rem;
+  background: #fff;
+  outline: 1px solid #000; }
+
+.retro__title {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 1px #ccc;
+  -moz-box-shadow: 0 1px 1px #ccc;
+  box-shadow: 0 1px 1px #ccc; }
+
+/*# sourceMappingURL=style.css.map */
