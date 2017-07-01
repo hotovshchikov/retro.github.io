@@ -156,8 +156,16 @@
 }
 
 .open_sticker__user_inf {
-  display: flex;
-  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & li {
+    display: inline-block;
+
+  }
+
+
 
   &:before {
     content: 'Author: ';
