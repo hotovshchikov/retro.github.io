@@ -132,6 +132,47 @@
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
   border: 0 solid #000000;
+  padding: 27px 35px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #404040;
+}
+
+
+.textarea__open_sticker {
+  width: 740px;
+  height: 164px;
+  font-size: 14px;
+}
+
+.open_sticker__sticker_titile {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.open_sticker__description {
+  text-align: center;
+  margin: 0 0 7px 0;
+}
+
+.open_sticker__user_inf {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: 'Author: ';
+    font-size: 14px;
+    color: #808080;
+    margin-right: 8px;
+  }
+
+
+
+}
+
+
+.user_inf__user_name {
+  margin: 0;
 
 
 
