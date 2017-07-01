@@ -83,4 +83,33 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr; }
 
+.mask_open_sticker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8; }
+
+.container_open_sticker {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.open_sticker {
+  width: 810px;
+  height: 410px;
+  z-index: 9000;
+  background-color: #fafafa;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0 solid #000000; }
+
 /*# sourceMappingURL=style.css.map */
