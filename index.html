@@ -14,7 +14,7 @@
 <body id="root">
 <div class="wrapper">
 
-  <!--Разметка контейнера-->
+
 
     <div class="retro__container">
       <div class="retro__box retro__box--1">
@@ -25,8 +25,7 @@
 
 
           <!--TODO удалить после закрытия таски -->
-          <a href="#" class="button-green"> показать</a>
-          <a href="#" class="button-red"> скрыть</a>
+          <a href="#" class="button-green" id="show"> показать</a>
           <!--потом удалить-->
 
 
@@ -71,50 +70,52 @@
       </div>
     </div>
 
-  <!--конец разметки контейнера-->
-
-
-  <div class="mask_open_sticker"></div>
 
 
 
 
-  <div class="container_open_sticker">
-    <div class="open_sticker">
-      <p class="open_sticker__sticker_titile">What was great in the sprint? #7</p>
-      <form>
-        <p class="open_sticker__description">Description:</p>
-        <textarea  class="textarea__open_sticker" name="text"> </textarea>
+  <!--Модальное окно открытого стикера-->
 
 
-        <ul class="open_sticker__user_inf">
-          <li><img class="user_avatar" src="img/user_avatar.jpg" alt="user_avatar"></li>
-          <li><p class="user_inf__user_name">user__name</p></li>
-        </ul>
+  <div id="container_full_sticker" class="display_none">
+    <div class="mask_open_sticker"></div>
+
+    <div class="container_open_sticker" >
+      <div class="open_sticker">
+
+        <a href="#"><img class="close_window" src="img/close_window.png" alt=""></a>
+
+        <p class="open_sticker__sticker_title">What was great in the sprint? </p>
+
+        <form>
+          <p class="open_sticker__description">Description:</p>
+          <textarea  class="textarea__open_sticker" name="text"> </textarea>
+
+          <ul class="open_sticker__user_inf">
+            <li><a href="#"><img class="user_avatar" src="img/user_avatar.jpg" alt="user_avatar"></a></li>
+            <li><a href="#" class="user_inf__user_name">gromoverzhec1949@rambler.com</a></li>
+          </ul>
+
+
+          <ul class="open_sticker__buttons">
+            <!--TODO удалить иконки пнг и сделать сфг спрайт-->
+            <li><a class="trash_icon" href="#"></a></li>
+            <li><a href="#" class="button-red" id="close">Cancel</a></li>
+            <li><a href="#" class="button-green" >Save</a></li>
+            <li><a href="#" class="flag_icon"></a></li>
+          </ul>
+        <!--потом изменить-->
 
 
 
-
-
-      </form>
+        </form>
+      </div>
     </div>
   </div>
+<!--конец модального окна открытого стикера-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <script src="js/scripts.js"></script>
   </div>
 </body>
 </html>

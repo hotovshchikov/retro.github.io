@@ -99,6 +99,9 @@
 }
 
 
+//Открытий стикер/////////////////////////////////
+
+
 .mask_open_sticker{
   position: absolute;
   top: 0;
@@ -106,7 +109,7 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.6;
 
 }
 
@@ -125,7 +128,6 @@
 
 .open_sticker {
   width: 810px;
-  height: 410px;
   z-index: 9000;
   background-color: #fafafa;
   border-radius: 5px 5px 5px 5px;
@@ -136,6 +138,7 @@
   box-sizing: border-box;
   font-size: 16px;
   color: #404040;
+
 }
 
 
@@ -145,7 +148,7 @@
   font-size: 14px;
 }
 
-.open_sticker__sticker_titile {
+.open_sticker__sticker_title {
   margin: 0;
   padding-bottom: 30px;
 }
@@ -158,13 +161,13 @@
 .open_sticker__user_inf {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 30px 0 0 0;
+  font-size: 14px;
+
 
   & li {
     display: inline-block;
-
   }
-
 
 
   &:before {
@@ -173,15 +176,97 @@
     color: #808080;
     margin-right: 8px;
   }
-
-
-
 }
 
 
 .user_inf__user_name {
   margin: 0;
+  color: #3189d6;
+}
 
+.user_avatar {
+  margin-bottom: -6px;
+}
+
+
+.open_sticker__buttons {
+  margin: 0;
+  padding: 25px 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & li {
+    display: inline-block;
+    margin-right: 40px;
+  }
+}
+
+.button-green,
+.button-red {
+  width: 145px;
+}
+
+
+.trash_icon {
+  display: block;
+  width: 19px;
+  height: 22px;
+  background: url("../img/trash_icon.png");
+
+}
+
+
+.flag_icon {
+  display: block;
+  width: 21px;
+  height: 24px;
+  background: url("../img/flag_icon.png");
+}
+
+
+.close_window {
+  position: relative;
+  top: -16px;
+  left: 755px;
+  display: block;
+  width: 7px;
+  height: 7px;
+
+}
+
+
+.display_none {
+  display: none!important;
 
 
 }
+
+#container_full_sticker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+//КОНЕЦ открытый стикер////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
