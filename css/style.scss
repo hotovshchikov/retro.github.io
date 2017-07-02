@@ -5,18 +5,12 @@
 
 .wrapper {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: repeat(2, minmax(38rem, 50%));
   grid-template-rows: repeat(2, minmax(27rem, 50%));
-=======
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
->>>>>>> origin
   grid-gap: 5px;
   background: #333;
 }
 
-<<<<<<< HEAD
 .retro__box {
   display: grid;
   grid-template-columns: 31rem;
@@ -34,7 +28,6 @@
   box-shadow: 0 1px 1px #ccc;
 }
 
-=======
 .retro__container {
   min-height: 49.6vh;
   display: grid;
@@ -277,21 +270,3 @@
 }
 
 //КОНЕЦ открытый стикер////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> origin
-
-
