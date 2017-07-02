@@ -3,6 +3,7 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  
 }
 
 #root {
@@ -47,20 +48,22 @@
   grid-template-rows: 1fr 5fr;
 }
 
-.retro__title p {
-  display: block;
-  margin: 0;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 5px #ccc;
-  -moz-box-shadow: 0px 2px 5px #ccc;
-  box-shadow: 0px 2px 5px #ccc;
+.retro__title {
+  p {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 5px #ccc;
+    -moz-box-shadow: 0px 2px 5px #ccc;
+    box-shadow: 0px 2px 5px #ccc;
+  }
 }
 
 .retro__content {
@@ -117,7 +120,11 @@
   grid-template-rows: 1fr;
 }
 
-.mask_open_sticker {
+
+//Открытий стикер/////////////////////////////////
+
+
+.mask_open_sticker{
   position: absolute;
   top: 0;
   left: 0;
@@ -125,7 +132,9 @@
   height: 100vh;
   background-color: black;
   opacity: 0.6;
+
 }
+
 
 .container_open_sticker {
   display: grid;
@@ -137,6 +146,7 @@
   top: 0;
   left: 0;
 }
+
 
 .open_sticker {
   width: 810px;
@@ -150,7 +160,9 @@
   box-sizing: border-box;
   font-size: 16px;
   color: #404040;
+
 }
+
 
 .textarea__open_sticker {
   width: 740px;
@@ -173,18 +185,21 @@
   padding: 0;
   margin: 30px 0 0 0;
   font-size: 14px;
+
+
+  & li {
+    display: inline-block;
+  }
+
+
+  &:before {
+    content: 'Author: ';
+    font-size: 14px;
+    color: #808080;
+    margin-right: 8px;
+  }
 }
 
-.open_sticker__user_inf li {
-  display: inline-block;
-}
-
-.open_sticker__user_inf:before {
-  content: 'Author: ';
-  font-size: 14px;
-  color: #808080;
-  margin-right: 8px;
-}
 
 .user_inf__user_name {
   margin: 0;
@@ -195,6 +210,7 @@
   margin-bottom: -6px;
 }
 
+
 .open_sticker__buttons {
   margin: 0;
   padding: 25px 0 0 0;
@@ -202,11 +218,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.open_sticker__buttons li {
-  display: inline-block;
-  margin-right: 40px;
+  & li {
+    display: inline-block;
+    margin-right: 40px;
+  }
 }
 
 .button-green,
@@ -214,12 +230,15 @@
   width: 145px;
 }
 
+
 .trash_icon {
   display: block;
   width: 19px;
   height: 22px;
   background: url("../img/trash_icon.png");
+
 }
+
 
 .flag_icon {
   display: block;
@@ -228,6 +247,7 @@
   background: url("../img/flag_icon.png");
 }
 
+
 .close_window {
   position: relative;
   top: -16px;
@@ -235,10 +255,14 @@
   display: block;
   width: 7px;
   height: 7px;
+
 }
 
+
 .display_none {
-  display: none !important;
+  display: none!important;
+
+
 }
 
 #container_full_sticker {
@@ -247,8 +271,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+
 }
 
+//КОНЕЦ открытый стикер////////////////////////////////
 .user_card {
   height: 154px;
   width: 147px;
@@ -257,8 +283,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   background: #FAFAFA;
-  box-shadow: 0 2px 0 #e6e6e6;
-}
+  box-shadow: 0 2px 0 #e6e6e6; }
 
 .user_content {
   height: 75%;
@@ -266,21 +291,18 @@
   text-align: justify;
   border-bottom: 1px solid #E6E6E6;
   color: #404040;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .user_info {
   height: 25%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  grid-template-columns: 1fr 1fr; }
 
 .user_photo {
-  padding: 7px;
-}
+  padding: 7px; }
 
 .flag {
-  padding: 13px 10px 13px 52px;
-}
+  padding: 13px 10px 13px 52px; }
 
 /*# sourceMappingURL=style.css.map */
+
