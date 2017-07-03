@@ -13,9 +13,40 @@
 </head>
 <body id="root">
 <div class="wrapper">
-
-
-
+<!-- ==================================== -->
+<div class="modal-container" id="modal-container">
+  <div class="modal">
+    <div class="modal__header">
+    <h1 class="modal__header-text">Enter the forms for retro</h1>
+    <span class="modal__close" id="close">&times;</span>
+    </div>
+    <div class="modal__wrapper">
+      <div class="modal__inside-content">
+        <div class="modal__text-input">
+          <h3 class="modal__input-header">What was good in the sprint?</h3>
+          <textarea name="name" rows="2" class="modal__input"></textarea>
+          <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+        </div>
+        <div class="modal__text-input">
+          <h3 class="modal__input-header">What was bad in the sprint?</h3>
+          <textarea name="name" rows="2" class="modal__input"></textarea>
+          <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+        </div>
+        <div class="modal__text-input">
+          <h3 class="modal__input-header">What do you want to be better?</h3>
+          <textarea name="name" rows="2" class="modal__input"></textarea>
+          <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="modal__button-wrapper">
+      <button type="button" name="button" class="modal__button modal__button--delete"><img src="img/trash.png" alt=""></button>
+      <button type="button" name="button" class="modal__button modal__button--red" id="btnCancel"><span class="modal__button-text">Cancel</span></button>
+      <button type="button" name="button" class="modal__button modal__button--green"><span class="modal__button-text">Save</span></button>
+    </div>
+  </div>
+</div>
+<!-- ======================================= -->
     <div class="retro__container">
       <div class="retro__box retro__box--1">
         <div class="retro__title">
@@ -50,7 +81,7 @@
             </div>
           </a>
           <div class="user_card user_card_add">
-            <a class="circle-button-l" style="margin: 20px">
+            <a class="circle-button-l" id="circle-button-l" style="margin: 20px">
               <span class="cross"></span>
             </a>
           </div>
