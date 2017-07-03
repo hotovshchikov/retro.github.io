@@ -12,34 +12,43 @@
 
 <body id="root">
   <div class="wrapper">
-    <div class="modal">
-      <h1 class="modal__header">Enter the forms for retro</h1>
-      <div class="modal__wrapper">
-        <div class="modal-content">
-          <div class="modal__text-input">
-            <h3 class="modal__input-header">What was good in the sprint?</h3>
-            <textarea name="name" rows="2" cols="80" class="modal__input"></textarea>
-            <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
-          </div>
-          <div class="modal__text-input">
-            <h3 class="modal__input-header">What was bad in the sprint?</h3>
-            <textarea name="name" rows="2" cols="80" class="modal__input"></textarea>
-            <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
-          </div>
-          <div class="modal__text-input">
-            <h3 class="modal__input-header">What do you want to be better?</h3>
-            <textarea name="name" rows="2" cols="80" class="modal__input"></textarea>
-            <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+    <button type="button" name="button" id="open" class="modal__button modal__button--green">Open modal</button>
+
+    <div class="modal-container" id="modal-container">
+      <div class="modal">
+        <div class="modal__header">
+        <h1 class="modal__header-text">Enter the forms for retro</h1>
+        <span class="modal__close" id="close">&times;</span>
+        </div>
+        <div class="modal__wrapper">
+          <div class="modal__inside-content">
+            <div class="modal__text-input">
+              <h3 class="modal__input-header">What was good in the sprint?</h3>
+              <textarea name="name" rows="2" cols="80" class="modal__input"></textarea>
+              <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+            </div>
+            <div class="modal__text-input">
+              <h3 class="modal__input-header">What was bad in the sprint?</h3>
+              <textarea name="name" rows="2" cols="80" class="modal__input"></textarea>
+              <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+            </div>
+            <div class="modal__text-input">
+              <h3 class="modal__input-header">What do you want to be better?</h3>
+              <textarea name="name" rows="2" cols="80" class="modal__input"></textarea>
+              <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="modal__button-wrapper">
-        <button type="button" name="button" class="modal__button modal__button--delete"><img src="img/trash.png" alt=""></button>
-        <button type="button" name="button" class="modal__button modal__button--red"><span class="modal__button-text">Cancel</span></button>
-        <button type="button" name="button" class="modal__button modal__button--green"><span class="modal__button-text">Save</span></button>
+        <div class="modal__button-wrapper">
+          <button type="button" name="button" class="modal__button modal__button--delete"><img src="img/trash.png" alt=""></button>
+          <button type="button" name="button" class="modal__button modal__button--red" id="btnCancel"><span class="modal__button-text">Cancel</span></button>
+          <button type="button" name="button" class="modal__button modal__button--green"><span class="modal__button-text">Save</span></button>
+        </div>
       </div>
     </div>
   </div>
+
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
 
 </html>
