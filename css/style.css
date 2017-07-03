@@ -260,6 +260,15 @@
   box-shadow: 0 2px 0 #e6e6e6;
 }
 
+.user_card_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
 .user_content {
   height: 75%;
   padding: 10px;
