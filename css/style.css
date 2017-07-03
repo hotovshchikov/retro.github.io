@@ -46,7 +46,6 @@
   width: 90%;
   margin: 2rem;
   overflow-y: auto;
-  overflow-x: hidden;
   height: 60vh;
 }
 
@@ -114,4 +113,18 @@
   border-color: #1faa00;
   background: linear-gradient(0deg, #59c714 0%, #64dd17 100%);
   box-shadow: 0px 1px 0px 0px #178000;
+}
+
+.modal__wrapper::-webkit-scrollbar-track {
+  background-color: #ededed;
+}
+
+.modal__wrapper::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ededed;
+}
+
+.modal__wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3189d6;
 }
