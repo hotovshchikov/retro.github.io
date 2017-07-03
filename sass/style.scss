@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  
+
 }
 
 #root {
@@ -283,7 +283,16 @@
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   background: #FAFAFA;
-  box-shadow: 0 2px 0 #e6e6e6; }
+  box-shadow: 0 2px 0 #e6e6e6;
+  &_add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+}
 
 .user_content {
   height: 75%;
@@ -305,4 +314,3 @@
   padding: 13px 10px 13px 52px; }
 
 /*# sourceMappingURL=style.css.map */
-
