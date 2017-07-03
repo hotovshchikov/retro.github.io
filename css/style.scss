@@ -51,12 +51,9 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    // padding: 2rem 1rem 2rem 0;
     overflow-y: auto;
-    height: 50vh;
+    height: 55vh;
     width: 100%;
-  }
-  &__inside-input {
   }
   &__text-input {
     display: flex;
@@ -66,17 +63,16 @@
   }
   &__add {
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   &__input-header {
     margin: 0 auto;
   }
   &__input {
-    // width: 96%;
     width: 100%;
     border-radius: 3px;
     padding: 10px;
-    // resize: vertical;
+    resize: vertical;
   }
   &__input-header {
     font-family: Roboto;
