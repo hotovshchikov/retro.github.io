@@ -26,15 +26,12 @@ var body = document.body;
 
 btnOpen.onclick = function () {
   modal.style.display = 'block';
-  body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 }
 
 btnClose.onclick = function () {
   modal.style.display = 'none'
-  body.style.backgroundColor = 'rgba(0, 0, 0, 0)'
 }
 
 btnCancel.onclick = function () {
   modal.style.display = 'none'
-  body.style.backgroundColor = 'rgba(0, 0, 0, 0)'
 }
