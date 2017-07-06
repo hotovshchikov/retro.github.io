@@ -38,3 +38,4 @@ btnCancel.onclick = function () {
   modal.style.display = 'none';
   body.style.backgroundColor = 'rgba(0, 0, 0, 0)'
 };
+

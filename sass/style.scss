@@ -314,12 +314,29 @@
 
 /*# sourceMappingURL=style.css.map */
 
+////////members list////////
+.user__name {
+  text-decoration: none;
+  color: #404040;
+  vertical-align: top;
+  }
 
+.member__user--name {
+  vertical-align: top;
+  color: #404040;
+
+}
+////////End of members list//////
 // modal window
 
 #modal-container {
   display: none;
-  position: absolute;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 // Modal styles
 .modal {
