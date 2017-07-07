@@ -292,6 +292,15 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+.user__name {
+  text-decoration: none;
+  color: #404040;
+}
+
+.member__user--name {
+  vertical-align: top;
+}
+
 #modal-container {
   display: none;
   position: absolute;
