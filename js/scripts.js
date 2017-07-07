@@ -20,10 +20,9 @@ close.addEventListener('click',function () {
 // УДАЛИТЬ ПОТОМ
 
 var btnOpen = document.getElementById('circle-button-l');
-var btnClose = document.getElementById('close');
+var btnClose = document.getElementById('closeModal');
 var btnCancel = document.getElementById('btnCancel');
 var modal = document.getElementById('modal-container');
-var body = document.body;
 
 btnOpen.onclick = function () {
   modal.style.display = 'block';
