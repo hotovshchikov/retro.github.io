@@ -415,3 +415,24 @@
 	  background-color: #3189d6;
   }
 }
+
+
+.finish_retro_btn {
+  width: 145px;
+  height: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.finish_retro_btn img  {
+  width: 15px;
+  height: 16px;
+  margin-top: 5px;
+}
+
+.finish_retro_btn img:hover {
+  cursor: pointer;
+
+
+}
