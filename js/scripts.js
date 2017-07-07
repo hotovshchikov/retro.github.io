@@ -3,9 +3,10 @@
 // TODO Удалить данный код на события( тестово открывает и зкрывает стикер)
 
 
-var show = document.getElementById('show');
+var show = document.getElementsByClassName('user_card');
+console.log(show[0]);
 var containerFullSticker = document.getElementById('container_full_sticker');
-show.addEventListener('click', function () {
+show[0].addEventListener('click', function () {
   containerFullSticker.classList.remove('display_none');
 });
 
@@ -20,18 +21,18 @@ close.addEventListener('click',function () {
 
 var btnOpen = document.getElementById('circle-button-l');
 var btnClose = document.getElementById('close');
-var btnCancel = document.getElementById('btnCancel')
+var btnCancel = document.getElementById('btnCancel');
 var modal = document.getElementById('modal-container');
 var body = document.body;
 
 btnOpen.onclick = function () {
   modal.style.display = 'block';
-}
+};
 
 btnClose.onclick = function () {
   modal.style.display = 'none'
-}
+};
 
 btnCancel.onclick = function () {
   modal.style.display = 'none'
-}
+};
