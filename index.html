@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/style.css">
-
   <title>Retro</title>
 </head>
 <body id="root">
@@ -27,26 +25,33 @@
           <textarea name="name" rows="2" class="modal__input"></textarea>
           <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
         </div>
-        <div class="modal__text-input">
-          <h3 class="modal__input-header">What was bad in the sprint?</h3>
-          <textarea name="name" rows="2" class="modal__input"></textarea>
-          <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+        <div class="modal__wrapper">
+          <div class="modal__inside-content">
+            <div class="modal__text-input">
+              <h3 class="modal__input-header">What was good in the sprint?</h3>
+              <textarea name="name" rows="2" class="modal__input"></textarea>
+              <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+            </div>
+            <div class="modal__text-input">
+              <h3 class="modal__input-header">What was bad in the sprint?</h3>
+              <textarea name="name" rows="2" class="modal__input"></textarea>
+              <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+            </div>
+            <div class="modal__text-input">
+              <h3 class="modal__input-header">What do you want to be better?</h3>
+              <textarea name="name" rows="2" class="modal__input"></textarea>
+              <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+            </div>
+          </div>
         </div>
-        <div class="modal__text-input">
-          <h3 class="modal__input-header">What do you want to be better?</h3>
-          <textarea name="name" rows="2" class="modal__input"></textarea>
-          <a href="#" class="modal__add"><img src="img/plus.png" alt=""></a>
+        <div class="modal__button-wrapper">
+          <button type="button" name="button" class="modal__button modal__button--delete"><img src="img/trash.png" alt=""></button>
+          <button type="button" name="button" class="modal__button button-red" id="btnCancel"><span class="modal__button-text">Cancel</span></button>
+          <button type="button" name="button" class="modal__button button-green"><span class="modal__button-text">Save</span></button>
         </div>
       </div>
     </div>
-    <div class="modal__button-wrapper">
-      <button type="button" name="button" class="modal__button modal__button--delete"><img src="img/trash.png" alt=""></button>
-      <button type="button" name="button" class="modal__button modal__button--red" id="btnCancel"><span class="modal__button-text">Cancel</span></button>
-      <button type="button" name="button" class="modal__button modal__button--green"><span class="modal__button-text">Save</span></button>
-    </div>
-  </div>
-</div>
-<!-- ======================================= -->
+    <!-- ======================================= -->
     <div class="retro__container">
       <div class="retro__box retro__box--1">
         <div class="retro__title">
@@ -85,12 +90,9 @@
               <span class="cross"></span>
             </a>
           </div>
-
           <!--TODO удалить после закрытия таски -->
           <!-- <a href="#" class="button-green" id="show"> показать</a> -->
           <!--потом удалить-->
-
-
         </div>
       </div>
     </div>
@@ -178,21 +180,21 @@
           </div>
           <div class="members__main--container">
             <div class="member">
-              <img  class="user__pic" src="img/user.png" alt="">
+              <img class="user__pic" src="img/user.png" alt="">
               <a class="user__name" href="#">  <span class="member__user--name">Alexander Repeta</span>
               </a>
             </div>
             <div class="member">
-              <img  class="user__pic" src="img/user.png" alt="">
+              <img class="user__pic" src="img/user.png" alt="">
               <a class="user__name" href="#">  <span class="member__user--name">Alexander Repeta</span>
               </a>
             </div>
             <div class="member">
-              <img  class="user__pic" src="img/user.png" alt="">
+              <img class="user__pic" src="img/user.png" alt="">
               <a class="user__name" href="#">  <span class="member__user--name">Alexander Repeta</span>
               </a>
             </div>
-        </div>
+          </div>
         </div>
         <div class="retro__content retro__content--4">
           <a href="#">
@@ -207,55 +209,35 @@
         </div>
         <div class="retro__finish retro__finish--4">
         </div>
-
-    </div>
-
-
-
-
-
-  <!--Модальное окно открытого стикера-->
-
-
-  <div id="container_full_sticker" class="display_none">
-    <div class="mask_open_sticker"></div>
-
-    <div class="container_open_sticker" >
-      <div class="open_sticker">
-
-        <a href="#"><img class="close_window" src="img/close_window.png" alt=""></a>
-
-        <p class="open_sticker__sticker_title">What was great in the sprint? </p>
-
-        <form>
-          <p class="open_sticker__description">Description:</p>
-          <textarea  class="textarea__open_sticker" name="text"> </textarea>
-
-          <ul class="open_sticker__user_inf">
-            <li><a href="#"><img class="user_avatar" src="img/user_avatar.jpg" alt="user_avatar"></a></li>
-            <li><a href="#" class="user_inf__user_name">gromoverzhec1949@rambler.com</a></li>
-          </ul>
-
-
-          <ul class="open_sticker__buttons">
-            <!--TODO удалить иконки пнг и сделать сфг спрайт-->
-            <li><a class="trash_icon" href="#"></a></li>
-            <li><a href="#" class="button-red" id="close">Cancel</a></li>
-            <li><a href="#" class="button-green" >Save</a></li>
-            <li><a href="#" class="flag_icon"></a></li>
-          </ul>
-        <!--потом изменить-->
-
-
-
-        </form>
       </div>
+      <!--Модальное окно открытого стикера-->
+      <div id="container_full_sticker" class="display_none">
+        <div class="mask_open_sticker"></div>
+        <div class="container_open_sticker">
+          <div class="open_sticker">
+            <a href="#"><img class="close_window" src="img/close_window.png" alt=""></a>
+            <p class="open_sticker__sticker_title">What was great in the sprint? </p>
+            <form>
+              <p class="open_sticker__description">Description:</p>
+              <textarea class="textarea__open_sticker" name="text"> </textarea>
+              <ul class="open_sticker__user_inf">
+                <li><a href="#"><img class="user_avatar" src="img/user_avatar.jpg" alt="user_avatar"></a></li>
+                <li><a href="#" class="user_inf__user_name">gromoverzhec1949@rambler.com</a></li>
+              </ul>
+              <ul class="open_sticker__buttons">
+                <!--TODO удалить иконки пнг и сделать сфг спрайт-->
+                <li><a class="trash_icon" href="#"></a></li>
+                <li><a href="#" class="button-red" id="close">Cancel</a></li>
+                <li><a href="#" class="button-green">Save</a></li>
+                <li><a href="#" class="flag_icon"></a></li>
+              </ul>
+              <!--потом изменить-->
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--конец модального окна открытого стикера-->
+      <script src="js/scripts.js"></script>
     </div>
-  </div>
-<!--конец модального окна открытого стикера-->
-
-
-  <script src="js/scripts.js"></script>
-  </div>
 </body>
 </html>
