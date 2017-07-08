@@ -18,13 +18,6 @@
   background: #333;
 }
 
-.retro__box {
-  display: grid;
-  grid-template-columns: 31rem;
-  grid-template-rows: 4rem 21rem;
-  background: #fff;
-}
-
 .retro__title {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -70,6 +63,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2% 1%;
+
+  @media screen and (min-width: 1600px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .retro__container--2,
@@ -81,18 +78,20 @@
   grid-column: 2 / 3;
   grid-row: 1 / 4;
   display: grid;
-  justify-items: center;
+  justify-items: start;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 9fr 2fr;
 }
 
 .retro__content--4 {
-  grid-column: 1;
-  grid-row: 2 / 3;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  @media screen and (min-width: 1600px){
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .retro__finish--4 {
@@ -107,8 +106,9 @@
 
 .retro__box--4 {
   grid-template-columns: 4fr 2fr;
-  grid-template-rows: 0.5fr 2fr 2fr;
+  grid-template-rows: 0.80fr 4fr;
   grid-gap: 2% 2%;
+  grid-row-gap: 0;
 }
 
 .retro__finish--4 {
@@ -304,7 +304,12 @@
 
 .member__user--name {
   vertical-align: top;
+  font-family: 'Roboto', sans-serif;
   color: #404040;
+}
+
+.members__title--text {
+  font-family: 'Roboto', sans-serif;
 }
 ////////End of members list//////
 // modal window
@@ -423,6 +428,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-self: center;
 }
 
 .finish_retro_btn img  {
