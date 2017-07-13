@@ -26,16 +26,38 @@ var modal = document.getElementById('modal-container');
 
 btnOpen.onclick = function () {
   modal.style.display = 'block';
-  body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 };
 
 btnClose.onclick = function () {
   modal.style.display = 'none';
-  body.style.backgroundColor = 'rgba(0, 0, 0, 0)'
+  document.body.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 };
 
 btnCancel.onclick = function () {
   modal.style.display = 'none';
-  body.style.backgroundColor = 'rgba(0, 0, 0, 0)'
+  document.body.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 };
 
+// USER CARDS
+var userCard = document.querySelectorAll('.user_card');
+console.log(userCard);
+userCard.forEach(function (item) {
+  item.addEventListener('click', function () {
+    containerFullSticker.classList.remove('display_none');
+  });
+  item.addEventListener('mouseenter', function () {
+    item.classList.toggle('user_card-hovered');
+  });
+  item.addEventListener('mouseleave', function () {
+    item.classList.toggle('user_card-hovered');
+  });
+  item.addEventListener('mousedown', function (e) {
+    e.preventDefault();
+    item.classList.toggle('user_card-dragged');
+  });
+  item.addEventListener('mouseup', function (e) {
+    e.preventDefault();
+    item.classList.toggle('user_card-dragged');
+  });
+});
