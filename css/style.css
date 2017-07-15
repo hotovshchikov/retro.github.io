@@ -12,8 +12,8 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, minmax(38rem, 50%));
-  grid-template-rows: repeat(2, minmax(27rem, 50%));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 5px;
   background: #333;
 }
@@ -25,14 +25,14 @@
 }
 
 .retro__container {
-  min-height: 49.6vh;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+  min-height: 48vh;
+  display: flex;
   background: #fff;
 }
 
 .retro__box {
   margin: 0.5rem;
+  width: 48vw;
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr;
@@ -57,16 +57,9 @@
 
 .retro__content {
   display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 2% 1%;
-}
-
-@media screen and (min-width: 1600px) {
-  .retro__content {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .retro__container--2,
@@ -85,15 +78,8 @@
 
 .retro__content--4 {
   display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
-}
-
-@media screen and (min-width: 1600px) {
-  .retro__content--4 {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
+  grid-template-rows: 1fr;
 }
 
 .retro__finish--4 {
@@ -111,13 +97,6 @@
   grid-template-rows: 0.80fr 4fr;
   grid-gap: 2% 2%;
   grid-row-gap: 0;
-}
-
-.retro__finish--4 {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
 }
 
 .mask_open_sticker {
@@ -214,7 +193,7 @@
 
 .button-green,
 .button-red {
-  width: 145px;
+  width: 170px;
 }
 
 .trash_icon {
@@ -253,8 +232,10 @@
 }
 
 .user_card {
+  margin: 10px 5px;
   height: 153px;
-  width: 146px;
+  min-width: 146px;
+  max-width: 180px;
   border-radius: 5px;
   border: 1px solid #E6E6E6;
   font-family: 'Roboto', sans-serif;
@@ -448,7 +429,7 @@
 }
 
 .finish_retro_btn {
-  width: 145px;
+  width: 170px;
   height: 37px;
   display: flex;
   flex-direction: column;
