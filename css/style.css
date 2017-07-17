@@ -66,6 +66,7 @@
   justify-content: start;
   grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
   grid-template-rows: repeat(2, 1fr);
+  overflow-y: scroll;
 }
 
 .retro__members {
