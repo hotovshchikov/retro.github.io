@@ -302,7 +302,6 @@
 
 .members__title {
   justify-self: start;
-  padding-left: 1rem;
 }
 
 .user__name {
@@ -312,12 +311,6 @@
 
 .member__user--name {
   vertical-align: top;
-  font-family: 'Roboto', sans-serif;
-  color: #404040;
-}
-
-.members__title--text {
-  font-family: 'Roboto', sans-serif;
 }
 
 .button__showAll {
@@ -325,6 +318,7 @@
   border-bottom: dashed;
   color: #3189d6;
   width: 60px;
+  height: 25px;
 }
 
 .member__list--dropdown {

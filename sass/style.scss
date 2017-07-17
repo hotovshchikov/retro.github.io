@@ -302,7 +302,7 @@
 }
 .members__title {
   justify-self: start;
-  padding-left: 1rem;
+
 }
 .user__name {
   text-decoration: none;
@@ -311,18 +311,16 @@
 
 .member__user--name {
   vertical-align: top;
-  font-family: 'Roboto', sans-serif;
-  color: #404040;
+
 }
 
-.members__title--text {
-  font-family: 'Roboto', sans-serif;
-}
+
 .button__showAll{
   text-decoration: none;
   border-bottom: dashed;
   color: #3189d6;
   width: 60px;
+  height: 25px;
 }
 
 .member__list--dropdown {
@@ -351,32 +349,7 @@
 #skype:active {
   background: url("../img/skypePressed.png");
 }
-//.avatar-l{
-//  @include circle-l;
-//  border: $border-avatar-l;
-//  box-sizing: border-box;
-//  &:before {
-//    top: rem(-8);
-//    left: rem(-8);
-//  }
-//  img {
-//    width: 100%;
-//    height: 100%;
-//    border-radius: 100%   ;
-//  }
-//  .status {
-//    position: absolute;
-//    box-sizing: border-box;
-//    bottom: rem(3);
-//    right: rem(3);
-//    width: rem(9);
-//    height: rem(9);
-//    border-radius: 100%;
-//    border: 2px solid white;
-//    background-color: $green-light;
-//  }
-//}
-// ====SCROLL====
+
 
 ////////End of members list//////
 // modal window
