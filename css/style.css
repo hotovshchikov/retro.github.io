@@ -296,26 +296,66 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+.member {
+  height: 35px;
+}
+
+.members__title {
+  justify-self: start;
+  padding-left: 1rem;
+}
+
 .user__name {
   text-decoration: none;
   color: #404040;
-<<<<<<< HEAD
-=======
-  vertical-align: top;
->>>>>>> master
 }
 
 .member__user--name {
   vertical-align: top;
-<<<<<<< HEAD
-=======
   font-family: 'Roboto', sans-serif;
   color: #404040;
 }
 
 .members__title--text {
   font-family: 'Roboto', sans-serif;
->>>>>>> master
+}
+
+.button__showAll {
+  text-decoration: none;
+  border-bottom: dashed;
+  color: #3189d6;
+  width: 60px;
+}
+
+.member__list--dropdown {
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.hide:checked + .dropDown + .button__showAll {
+  display: block;
+}
+
+.button__skype {
+  margin: 1rem 4rem;
+}
+
+#skype {
+  display: block;
+  height: 56px;
+  width: 56px;
+  background: url("../img/skype.png");
+}
+
+#skype:hover {
+  background: url("../img/skypeHover.png");
+}
+
+#skype:active {
+  background: url("../img/skypePressed.png");
 }
 
 #modal-container {
