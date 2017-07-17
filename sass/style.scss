@@ -12,8 +12,8 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, minmax(38rem, 50%));
-  grid-template-rows: repeat(2, minmax(27rem, 50%));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 5px;
   background: #333;
 }
@@ -25,14 +25,14 @@
 }
 
 .retro__container {
-  min-height: 49.6vh;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+  min-height: 48vh;
+  display: flex;
   background: #fff;
 }
 
 .retro__box {
   margin: 0.5rem;
+  width: 48vw;
   grid-column: 2;
   display: grid;
   grid-template-columns: 1fr;
@@ -59,14 +59,11 @@
 
 .retro__content {
   display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  //justify-items: center;
+  justify-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 2% 1%;
 
-  @media screen and (min-width: 1600px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .retro__container--2,
@@ -85,13 +82,8 @@
 
 .retro__content--4 {
   display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
-
-  @media screen and (min-width: 1600px){
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
+  grid-template-rows: 1fr;
 }
 
 .retro__finish--4 {
@@ -106,17 +98,9 @@
 
 .retro__box--4 {
   grid-template-columns: 4fr 2fr;
-  grid-template-rows: 0.80fr 4fr;
-  grid-gap: 2% 2%;
-  grid-row-gap: 0;
+  grid-template-rows: 0.8fr 2fr 2fr;
 }
 
-.retro__finish--4 {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-}
 //Открытий стикер/////////////////////////////////
 .mask_open_sticker{
   position: fixed;
@@ -213,7 +197,7 @@
 
 .button-green,
 .button-red {
-  width: 145px;
+  width: 170px;
 }
 
 
@@ -256,14 +240,22 @@
 }
 //КОНЕЦ открытый стикер////////////////////////////////
 .user_card {
-  height: 154px;
-  width: 147px;
+  margin: 10px 5px;
+  height: 153px;
+  min-width: 146px;
+  max-width: 180px;
   border-radius: 5px;
   border: 1px solid #E6E6E6;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
   background: #FAFAFA;
   box-shadow: 0 2px 0 #e6e6e6;
+  &-hovered {
+    background: #fff;
+  }
+  &-dragged {
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.5);
+  }
   &_add {
     display: flex;
     align-items: center;
@@ -273,7 +265,6 @@
     box-shadow: none;
   }
 }
-
 .user_content {
   height: 75%;
   padding: 10px;
@@ -283,15 +274,23 @@
   overflow: hidden; }
 
 .user_info {
+  cursor: move;
   height: 25%;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 33px; }
 
 .user_photo {
-  padding: 7px; }
-
+  padding: 7px;
+  cursor: pointer;
+}
 .flag {
-  padding: 13px 10px 13px 52px; }
+  cursor: pointer;
+  padding: 13px 10px 13px 13px;
+}
+.circle-button-l {
+  box-shadow: 0 0 0 5px #E1E2E1;
+}
+
 
 /*# sourceMappingURL=style.css.map */
 
@@ -463,7 +462,7 @@
 
 
 .finish_retro_btn {
-  width: 145px;
+  width: 170px;
   height: 37px;
   display: flex;
   flex-direction: column;
