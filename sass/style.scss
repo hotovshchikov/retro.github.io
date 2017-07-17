@@ -25,9 +25,15 @@
 }
 
 .retro__container {
-  min-height: 48vh;
-  display: flex;
+  display: block;
+  max-height: 27rem;
   background: #fff;
+}
+
+.retro__container--4 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
 }
 
 .retro__box {
@@ -66,29 +72,25 @@
 
 }
 
-.retro__container--2,
-.retro__container--4 {
-  grid-template-columns: 5fr 1fr;
-}
-
 .retro__members {
   grid-column: 2 / 3;
   grid-row: 1 / 4;
   display: grid;
   justify-items: start;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 9fr 2fr;
+  grid-template-rows: 1fr 6fr 5fr;
 }
 
 .retro__content--4 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
+  ggrid-template-columns: repeat(auto-fill, minmax(146px, 180px));
   grid-template-rows: 1fr;
 }
 
 .retro__finish--4 {
-  grid-column: 1;
-  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
+  grid-template-rows: 1fr;
 }
 
 .retro__box--2,
@@ -99,6 +101,7 @@
 .retro__box--4 {
   grid-template-columns: 4fr 2fr;
   grid-template-rows: 0.8fr 2fr 2fr;
+  grid-column-gap: 10px;
 }
 
 //Открытий стикер/////////////////////////////////
@@ -297,18 +300,41 @@
 ////////members list////////
 
 .member {
-  height: 35px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  height: 25px;
 }
 .members__title {
   justify-self: start;
+  align-self: center;
 }
+
+.members__title--text{
+  font-size: 14px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.members__main--container {
+  display: block;
+  width: 13rem;
+  height: 13rem;
+  overflow-y: scroll;
+}
+
 .user__name {
+  display: block;
+  margin-left: 10px;
   text-decoration: none;
   color: #404040;
 }
 
 .member__user--name {
   vertical-align: top;
+  font-size: 12px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
 
 }
 .button__showAll{
@@ -330,7 +356,8 @@
 
 }
 .button__skype {
-  margin: 1rem 4rem;
+  display: block;
+  padding: 1rem 0 0 5rem;
 }
 #skype {
   display: block;
