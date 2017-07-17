@@ -82,15 +82,18 @@
 }
 
 .retro__content--4 {
+  height: 11rem;
   display: grid;
-  ggrid-template-columns: repeat(auto-fill, minmax(146px, 180px));
+  grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
   grid-template-rows: 1fr;
+  overflow-y: scroll;
 }
 
 .retro__finish--4 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(146px, 180px));
   grid-template-rows: 1fr;
+  overflow: hidden;
 }
 
 .retro__box--2,
